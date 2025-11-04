@@ -1,0 +1,101 @@
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, Arial, sans-serif; min-height: 100vh; background-image: url(abstract-120-background-wallpaper-gradient_792836-195952.avif); z-index: -1;}
+
+  nav.navbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px 20px;
+    background: rgb(41,0,41);
+    color: yellow;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.123);
+    height: 100px;
+  }
+
+
+  #logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: yellow;
+  }
+
+
+  .nav-spacer { margin-left: auto; }
+
+  ul.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  ul.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  ul.nav-list li a:hover,
+  ul.nav-list li a:focus {
+    transform: translateY(-3px);
+    transition: transform .18s ease;
+    background: rgba(255,255,255,.06);
+  }
+
+
+  @media (max-width: 520px) {
+    nav.navbar { flex-wrap: wrap; gap: 10px; padding: 10px; }
+    ul.nav-list { width: 100%; justify-content: space-around; }
+    #logo { flex-basis: 100%; text-align: center; order: -1; }
+    .nav-spacer { margin-left: 0; }
+  }
+
+  main { padding: 24px; }
+  main p {
+    font-size: 10rem;
+  }
+  #yellow-stripe {
+    color: transparent;
+    background-color: yellow;
+    position: sticky;
+    top: 99px;
+    z-index: 1000;
+    border: 2px solid gold;
+  }
+  #login-button {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 8px;
+  } 
+  #main-content {
+    font-family: 'Fascinate Inline';
+    color: goldenrod;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+  }
+  
+  #explanation {
+    display: flex;
+    height: 100px;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    border: 3px double black;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
